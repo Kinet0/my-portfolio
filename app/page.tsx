@@ -84,7 +84,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 border-b border-[#3b4b37] bg-[#0c160a]/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4">
           <div className="font-[700] text-[1.35rem] tracking-[-0.035em] text-[#00ff41] uppercase">
-            ROOT@PORTFOLIO:~#
+            ROOT PORTFOLIO
           </div>
           <div className="hidden items-center gap-4 text-[0.7rem] uppercase tracking-[0.24em] text-[#b9ccb2] md:flex">
             <a href="#home" className="border-b border-[#00ff41] pb-1 text-[#00ff41]">
@@ -119,7 +119,7 @@ export default function Home() {
         <section id="home" className="grid gap-6 lg:grid-cols-[2fr_1fr]">
           <article className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
             <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 flex items-center justify-between text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
-              <span>[ bash - 80x24 ]</span>
+              <span>PROFILE</span>
               <div className="flex gap-2">
                 <span className="h-2.5 w-2.5 border border-[#84967e]" />
                 <span className="h-2.5 w-2.5 border border-[#84967e]" />
@@ -127,22 +127,20 @@ export default function Home() {
               </div>
             </div>
             <div className="p-6 flex flex-col gap-6">
-              <div className="flex flex-wrap items-center gap-3 text-[0.82rem] text-[#00ff41]">
-                <span className="font-[700]">root@portfolio:~#</span>
-                <span className="text-[#b9ccb2]">whoami</span>
+              <div className="text-[0.82rem] text-[#00ff41] font-[700] uppercase tracking-[0.14em]">
+                Cybersecurity and software engineering leadership
               </div>
               <h1 className="text-[2.45rem] leading-[1.05] tracking-[-0.05em] text-[#ebffe2]">
                 I&rsquo;m Alex Chen, crafting secure digital experiences through elegant code.
               </h1>
-              <div className="space-y-2 text-[0.9rem] text-[#b9ccb2]">
-                <div>&gt; SYSTEM INITIATED...</div>
-                <div>&gt; LOADING MODULES: [SECURITY_OPS, FULL_STACK_DEV, NET_INFRA]</div>
-                <div>&gt; KERNEL PANIC AVERTED.</div>
-                <div className="text-[#00ff41]">&gt; STATUS: READY FOR INPUT_<span className="blink inline-block">█</span></div>
+              <div className="space-y-3 text-[0.9rem] text-[#b9ccb2]">
+                <div>Experienced in secure systems design, application development, and threat mitigation.</div>
+                <div>Delivering polished product interfaces and resilient infrastructure for enterprise environments.</div>
+                <div>Committed to clear communication, reliability, and operational excellence.</div>
               </div>
               <button className="inline-flex items-center gap-2 border border-[#00ff41] bg-transparent px-5 py-3 text-[0.75rem] uppercase tracking-[0.12em] text-[#00ff41] transition-colors duration-150 hover:bg-[#00ff41] hover:text-[#000000]">
                 <span className="material-symbols-outlined text-[18px]">power</span>
-                [ INITIALIZE_CONNECTION ]
+                VIEW PORTFOLIO
               </button>
             </div>
           </article>
@@ -167,7 +165,7 @@ export default function Home() {
                     </div>
                     <div className="text-[0.9rem] uppercase tracking-[0.22em]">SYSTEM AGENT</div>
                     <div className="mt-4 text-sm leading-6 text-[#dae6d2]">
-                      Cybersecurity engineer with a roots-level mindset and terminal-first interface design.
+                      Cybersecurity engineer focused on secure architecture, defensive systems, and polished delivery.
                     </div>
                   </div>
                 </div>
@@ -197,10 +195,10 @@ export default function Home() {
         <section id="skills" className="grid gap-6 xl:grid-cols-[1.25fr_0.75fr]">
           <div className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
             <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
-              ls -la ./skills
+              TECHNICAL SKILLS
             </div>
             <div className="p-6 space-y-5">
-              <div className="text-[0.9rem] text-[#b9ccb2]">&gt; Proficiency matrix generated from active project telemetry and cert-level assessments.</div>
+              <div className="text-[0.9rem] text-[#b9ccb2]">A concise overview of core technical skills and proficiency levels.</div>
               <div className="space-y-4">
                 {skills.map((skill) => (
                   <div key={skill.label} className="space-y-1">
@@ -247,14 +245,14 @@ export default function Home() {
 
         <section id="projects" className="space-y-5">
           <div className="border-l-4 border-[#00ff41] bg-[#0d0d0d] p-5 border-[#84967e]">
-            <h2 className="text-[1.75rem] font-[700] uppercase tracking-[-0.02em] text-[#00ff41]">ls -la ./projects</h2>
-            <p className="mt-3 text-[0.9rem] text-[#b9ccb2]">&gt; Total 3 items found. Rendering active deployments and secure prototypes.</p>
+            <h2 className="text-[1.75rem] font-[700] uppercase tracking-[-0.02em] text-[#00ff41]">PROJECTS</h2>
+            <p className="mt-3 text-[0.9rem] text-[#b9ccb2]">Featured work focused on security, performance, and scalable architecture.</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {projects.map((project) => (
               <article key={project.title} className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150 flex flex-col">
                 <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 flex items-center justify-between text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
-                  <span className="text-[#00ff41]">root@node01: ~/{project.title.replace(/\s+/g, "_").toLowerCase()}</span>
+                  <span className="text-[#00ff41]">PROJECT SUMMARY</span>
                   <div className="flex gap-2 text-[0.6rem] uppercase opacity-60">
                     <span>[ ]</span>
                     <span>[-]</span>
@@ -285,14 +283,14 @@ export default function Home() {
 
         <section id="certifications" className="space-y-5">
           <div className="border-l-4 border-[#00ff41] bg-[#0d0d0d] p-5 border-[#84967e]">
-            <h2 className="text-[1.75rem] font-[700] uppercase tracking-[-0.02em] text-[#00ff41]">./list_credentials.sh</h2>
-            <p className="mt-3 text-[0.9rem] text-[#b9ccb2]">&gt; Found 2 verified certification entities in secure keystore.</p>
+            <h2 className="text-[1.75rem] font-[700] uppercase tracking-[-0.02em] text-[#00ff41]">CERTIFICATIONS</h2>
+            <p className="mt-3 text-[0.9rem] text-[#b9ccb2]">Verified professional credentials supporting secure systems and cloud engineering.</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {certifications.map((cert) => (
               <article key={cert.title} className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150 flex flex-col">
                 <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 flex items-center justify-between text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
-                  <span>[ auth_token_{cert.title.replace(/\s+/g, "_").toLowerCase()}.crt ]</span>
+                  <span>CERTIFICATION RECORD</span>
                   <div className="flex gap-2">
                     <span className="h-2 w-2 border border-[#84967e]" />
                     <span className="h-2 w-2 border border-[#84967e]" />
@@ -314,7 +312,7 @@ export default function Home() {
                   <p className="text-[#b9ccb2] leading-6">{cert.summary}</p>
                   <div className="flex justify-end pt-2">
                     <button className="border border-[#00ff41] px-4 py-2 text-[0.75rem] uppercase tracking-[0.18em] text-[#00ff41] transition-colors duration-150 hover:bg-[#00ff41] hover:text-[#000000]">
-                      PULL_CERT_FILE
+                      DOWNLOAD CERTIFICATE
                     </button>
                   </div>
                 </div>
@@ -326,13 +324,13 @@ export default function Home() {
         <section id="contact" className="grid gap-6 xl:grid-cols-[1.4fr_0.6fr]">
           <article className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
             <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
-              contact matrix
+              CONTACT
             </div>
             <form className="p-6 space-y-5" method="post">
-              <div className="text-[0.9rem] text-[#b9ccb2]">&gt; Transmit secure message to operator. All fields are encrypted in transit.</div>
+              <div className="text-[0.9rem] text-[#b9ccb2]">Send a message to discuss collaboration, consulting, or opportunities.</div>
               <div className="space-y-2">
                 <label className="block text-[0.78rem] uppercase tracking-[0.18em] text-[#b9ccb2]" htmlFor="name">
-                  &gt; IDENTIFICATION [NAME]
+                  NAME
                 </label>
                 <input
                   id="name"
@@ -344,19 +342,19 @@ export default function Home() {
               </div>
               <div className="space-y-2">
                 <label className="block text-[0.78rem] uppercase tracking-[0.18em] text-[#b9ccb2]" htmlFor="email">
-                  &gt; RETURN VECTOR [EMAIL]
+                  EMAIL
                 </label>
                 <input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="root@domain.local"
+                  placeholder="name@example.com"
                   className="w-full bg-transparent border-b border-dashed border-[#84967e] px-3 py-2 text-[#dae6d2] outline-none transition-colors duration-150 focus:border-[#00ff41]"
                 />
               </div>
               <div className="space-y-2">
                 <label className="block text-[0.78rem] uppercase tracking-[0.18em] text-[#b9ccb2]" htmlFor="message">
-                  &gt; PAYLOAD [MESSAGE]
+                  MESSAGE
                 </label>
                 <textarea
                   id="message"
@@ -368,26 +366,26 @@ export default function Home() {
               </div>
               <div className="flex justify-end">
                 <button className="border border-[#00ff41] bg-transparent px-6 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#00ff41] transition-colors duration-150 hover:bg-[#00ff41] hover:text-[#000000]">
-                  TRANSMIT DATA
+                  SEND MESSAGE
                 </button>
               </div>
             </form>
           </article>
 
           <aside className="border border-[#84967e] bg-[#0d0d0d] p-6 hover:border-[#00ff41] transition-colors duration-150">
-            <div className="mb-4 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">system console</div>
+            <div className="mb-4 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">contact details</div>
             <div className="space-y-4 text-[0.9rem] text-[#b9ccb2]">
               <div>
-                <span className="text-[#00ff41]">&gt; HOSTNAME:</span> root-portfolio.local
+                <span className="text-[#00ff41]">LOCATION:</span> Remote / Global
               </div>
               <div>
-                <span className="text-[#00ff41]">&gt; SECURE SHELL:</span> enabled
+                <span className="text-[#00ff41]">AVAILABILITY:</span> Consulting and advisory engagements
               </div>
               <div>
-                <span className="text-[#00ff41]">&gt; LAST PING:</span> 2ms
+                <span className="text-[#00ff41]">RESPONSE TIME:</span> 24-48 hours
               </div>
               <div>
-                <span className="text-[#00ff41]">&gt; STATUS:</span> OPERATIONAL
+                <span className="text-[#00ff41]">STATUS:</span> OPERATIONAL
               </div>
             </div>
             <div className="mt-6 border-t border-[#3b4b37] pt-4 text-[0.8rem] uppercase tracking-[0.16em] text-[#b9ccb2]">
@@ -406,7 +404,7 @@ export default function Home() {
 
       <footer className="border-t border-[#3b4b37] bg-[#0c160a] px-6 py-5 text-[0.82rem] text-[#b9ccb2]">
         <div className="mx-auto flex max-w-[1280px] flex-col gap-3 md:flex-row md:items-center md:justify-between">
-          <div>[ SYSTEM STATUS: OPERATIONAL ] © 2026 ROOT PORTFOLIO</div>
+          <div>PORTFOLIO STATUS: OPERATIONAL © 2026 ROOT PORTFOLIO</div>
           <div className="flex flex-wrap items-center gap-4 text-[#00ff41]">
             {telegram.map((item) => (
               <a key={item.label} href={item.href} className="hover:text-[#ebffe2] transition-colors">
