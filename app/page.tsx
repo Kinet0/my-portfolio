@@ -80,8 +80,8 @@ function renderBlocks(value: number) {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0c160a] text-[#dae6d2] selection:bg-[#00ff41] selection:text-[#000000]">
-      <nav className="sticky top-0 z-50 border-b border-[#3b4b37] bg-[#0c160a]/95 backdrop-blur-sm">
+    <div className="min-h-screen bg-[#0a0a0a] text-[#dae6d2] selection:bg-[#00ff41] selection:text-[#000000]">
+      <nav className="sticky top-0 z-50 border-b border-[#3b4b37] bg-[#0a0a0a]/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4">
           <div className="font-[700] text-[1.35rem] tracking-[-0.035em] text-[#00ff41] uppercase">
             ROOT PORTFOLIO
@@ -155,7 +155,7 @@ export default function Home() {
                   <span className="h-2.5 w-2.5 border border-[#00ff41] bg-[#00ff41]" />
                 </div>
               </div>
-              <div className="relative p-6 flex h-full items-center justify-center bg-[#0c160a]">
+              <div className="relative p-6 flex h-full items-center justify-center bg-[#0a0a0a]">
                 <div className="relative h-[320px] w-full overflow-hidden border border-[#00ff41] bg-[#141e12]">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,255,65,0.18),_transparent_35%)]" />
                   <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,65,0.08)_50%,transparent_50%)] bg-[length:100%_4px] opacity-90 pointer-events-none" />
@@ -259,6 +259,9 @@ export default function Home() {
                     <span>[x]</span>
                   </div>
                 </div>
+                <div className="border border-[#3b4b37] bg-[#0a0a0a] aspect-[16/9] mb-4 flex items-center justify-center text-[0.8rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
+                  Placeholder Thumbnail
+                </div>
                 <div className="p-5 flex flex-col gap-4 flex-1">
                   <div className="space-y-3">
                     <h3 className="text-[1.05rem] uppercase tracking-[0.02em] text-[#00ff41]">{project.title}</h3>
@@ -297,13 +300,15 @@ export default function Home() {
                     <span className="h-2 w-2 border border-[#84967e]" />
                   </div>
                 </div>
+                <div className="border border-[#3b4b37] bg-[#0a0a0a] aspect-[16/9] mb-4 flex items-center justify-center text-[0.8rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
+                  Placeholder Thumbnail
+                </div>
                 <div className="p-5 flex flex-col gap-4 flex-1">
                   <div className="flex items-start justify-between gap-4">
                     <h3 className="text-[1rem] uppercase tracking-[0.02em] text-[#00ff41]">{cert.title}</h3>
                     <span className="border border-[#00ff41] px-3 py-1 text-[0.7rem] uppercase tracking-[0.16em] text-[#00ff41]">
                       [ VERIFIED ]
                     </span>
-                  </div>
                   <div className="text-[0.78rem] text-[#b9ccb2] border-y border-[#3b4b37] py-3 flex flex-wrap gap-2">
                     <span>AUTHORITY: {cert.authority}</span>
                     <span>|</span>
@@ -402,7 +407,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-[#3b4b37] bg-[#0c160a] px-6 py-5 text-[0.82rem] text-[#b9ccb2]">
+      <footer className="border-t border-[#3b4b37] bg-[#0a0a0a] px-6 py-5 text-[0.82rem] text-[#b9ccb2]">
         <div className="mx-auto flex max-w-[1280px] flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>PORTFOLIO STATUS: OPERATIONAL © 2026 ROOT PORTFOLIO</div>
           <div className="flex flex-wrap items-center gap-4 text-[#00ff41]">
