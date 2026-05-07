@@ -115,8 +115,8 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="mx-auto grid max-w-[1280px] gap-8 px-6 py-10 sm:py-14">
-        <section id="home" className="grid gap-6 lg:grid-cols-[2fr_1fr]">
+      <main className="mx-auto grid max-w-[1280px] gap-5 px-4 py-10 sm:py-14">
+        <section id="home" className="grid gap-4 lg:grid-cols-[1.55fr_0.95fr] items-start">
           <article className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
             <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 flex items-center justify-between text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
               <span>PROFILE</span>
@@ -126,7 +126,7 @@ export default function Home() {
                 <span className="h-2.5 w-2.5 border border-[#00ff41] bg-[#00ff41]" />
               </div>
             </div>
-            <div className="p-6 flex flex-col gap-6">
+            <div className="p-4 flex flex-col gap-4">
               <div className="text-[0.82rem] text-[#00ff41] font-[700] uppercase tracking-[0.14em]">
                 Cybersecurity and software engineering leadership
               </div>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           </article>
 
-          <aside className="grid gap-6">
+          <aside className="grid gap-3">
             <div className="relative overflow-hidden border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
               <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2] flex justify-between items-center">
                 <span>PROFILE SNAPSHOT</span>
@@ -155,8 +155,8 @@ export default function Home() {
                   <span className="h-2.5 w-2.5 border border-[#00ff41] bg-[#00ff41]" />
                 </div>
               </div>
-              <div className="relative p-6 flex h-full items-center justify-center bg-[#0a0a0a]">
-                <div className="relative h-[320px] w-full overflow-hidden border border-[#00ff41] bg-[#141e12]">
+              <div className="relative p-3 flex items-center justify-center bg-[#0a0a0a]">
+                  <div className="relative h-[240px] w-full overflow-hidden border border-[#00ff41] bg-[#141e12]">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,255,65,0.18),_transparent_35%)]" />
                   <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,65,0.08)_50%,transparent_50%)] bg-[length:100%_4px] opacity-90 pointer-events-none" />
                   <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4 text-[#b9ccb2]">
@@ -172,9 +172,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border border-[#84967e] bg-[#0d0d0d] p-5 hover:border-[#00ff41] transition-colors duration-150">
+            <div className="border border-[#84967e] bg-[#0d0d0d] p-4 hover:border-[#00ff41] transition-colors duration-150">
               <div className="mb-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">SYSTEM STATUS</div>
-              <div className="grid gap-3 text-[0.9rem] text-[#dae6d2]">
+              <div className="grid gap-2 text-[0.9rem] text-[#dae6d2]">
                 <div className="flex justify-between border-b border-[#3b4b37] pb-2">
                   <span>ENCRYPTION</span>
                   <span className="border border-[#00ff41] px-2 py-[0.35rem] text-[#00ff41]">AES-256 ACTIVE</span>
@@ -192,12 +192,12 @@ export default function Home() {
           </aside>
         </section>
 
-        <section id="skills" className="grid gap-6 xl:grid-cols-[1.25fr_0.75fr]">
+        <section id="skills" className="grid gap-4 xl:grid-cols-[1.2fr_0.8fr] items-start">
           <div className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
             <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
               TECHNICAL SKILLS
             </div>
-            <div className="p-6 space-y-5">
+            <div className="p-4 space-y-4">
               <div className="text-[0.9rem] text-[#b9ccb2]">A concise overview of core technical skills and proficiency levels.</div>
               <div className="space-y-4">
                 {skills.map((skill) => (
@@ -213,12 +213,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-6">
+          <div className="grid gap-4">
             <div className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
               <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
                 frameworks & libraries
               </div>
-              <div className="p-6 space-y-3 text-[0.88rem] text-[#dae6d2]">
+              <div className="p-4 space-y-2 text-[0.88rem] text-[#dae6d2]">
                 {frameworks.map((framework) => (
                   <div key={framework.label} className="flex items-center justify-between border-b border-[#3b4b37] py-3 last:border-none">
                     <span className="text-[#bdf4ff]">{framework.label}</span>
@@ -231,7 +231,7 @@ export default function Home() {
               <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
                 tooling
               </div>
-              <div className="p-6 grid gap-3 text-[0.85rem] text-[#dae6d2]">
+              <div className="p-4 grid gap-2 text-[0.85rem] text-[#dae6d2]">
                 {tools.map((tool) => (
                   <div key={tool.key} className="flex justify-between border-b border-[#3b4b37] py-3 last:border-none">
                     <span className="text-[#9cf0ff]">{tool.key}</span>
@@ -243,12 +243,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="space-y-5">
-          <div className="border-l-4 border-[#00ff41] bg-[#0d0d0d] p-5 border-[#84967e]">
+        <section id="projects" className="space-y-3">
+          <div className="border-l-4 border-[#00ff41] bg-[#0d0d0d] p-4 border-[#84967e]">
             <h2 className="text-[1.75rem] font-[700] uppercase tracking-[-0.02em] text-[#00ff41]">PROJECTS</h2>
             <p className="mt-3 text-[0.9rem] text-[#b9ccb2]">Featured work focused on security, performance, and scalable architecture.</p>
           </div>
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {projects.map((project) => (
               <article key={project.title} className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150 flex flex-col">
                 <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 flex items-center justify-between text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
@@ -262,7 +262,7 @@ export default function Home() {
                 <div className="border border-[#3b4b37] bg-[#0a0a0a] aspect-[16/9] mb-4 flex items-center justify-center text-[0.8rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
                   Placeholder Thumbnail
                 </div>
-                <div className="p-5 flex flex-col gap-4 flex-1">
+                <div className="p-4 flex flex-col gap-4 flex-1">
                   <div className="space-y-3">
                     <h3 className="text-[1.05rem] uppercase tracking-[0.02em] text-[#00ff41]">{project.title}</h3>
                     <div className="flex flex-wrap gap-2 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
@@ -284,12 +284,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="certifications" className="space-y-5">
-          <div className="border-l-4 border-[#00ff41] bg-[#0d0d0d] p-5 border-[#84967e]">
+        <section id="certifications" className="space-y-3">
+          <div className="border-l-4 border-[#00ff41] bg-[#0d0d0d] p-4 border-[#84967e]">
             <h2 className="text-[1.75rem] font-[700] uppercase tracking-[-0.02em] text-[#00ff41]">CERTIFICATIONS</h2>
             <p className="mt-3 text-[0.9rem] text-[#b9ccb2]">Verified professional credentials supporting secure systems and cloud engineering.</p>
           </div>
-          <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2">
             {certifications.map((cert) => (
               <article key={cert.title} className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150 flex flex-col">
                 <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 flex items-center justify-between text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
@@ -303,12 +303,13 @@ export default function Home() {
                 <div className="border border-[#3b4b37] bg-[#0a0a0a] aspect-[16/9] mb-4 flex items-center justify-center text-[0.8rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
                   Placeholder Thumbnail
                 </div>
-                <div className="p-5 flex flex-col gap-4 flex-1">
+                <div className="p-4 flex flex-col gap-4 flex-1">
                   <div className="flex items-start justify-between gap-4">
                     <h3 className="text-[1rem] uppercase tracking-[0.02em] text-[#00ff41]">{cert.title}</h3>
                     <span className="border border-[#00ff41] px-3 py-1 text-[0.7rem] uppercase tracking-[0.16em] text-[#00ff41]">
                       [ VERIFIED ]
                     </span>
+                  </div>
                   <div className="text-[0.78rem] text-[#b9ccb2] border-y border-[#3b4b37] py-3 flex flex-wrap gap-2">
                     <span>AUTHORITY: {cert.authority}</span>
                     <span>|</span>
@@ -326,12 +327,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="grid gap-6 xl:grid-cols-[1.4fr_0.6fr]">
+        <section id="contact" className="grid gap-4 xl:grid-cols-[1.35fr_0.65fr] items-start">
           <article className="border border-[#84967e] bg-[#0d0d0d] hover:border-[#00ff41] transition-colors duration-150">
             <div className="border-b border-[#3b4b37] bg-[#141e12] px-4 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">
               CONTACT
             </div>
-            <form className="p-6 space-y-5" method="post">
+            <form className="p-4 space-y-4" method="post">
               <div className="text-[0.9rem] text-[#b9ccb2]">Send a message to discuss collaboration, consulting, or opportunities.</div>
               <div className="space-y-2">
                 <label className="block text-[0.78rem] uppercase tracking-[0.18em] text-[#b9ccb2]" htmlFor="name">
@@ -377,7 +378,7 @@ export default function Home() {
             </form>
           </article>
 
-          <aside className="border border-[#84967e] bg-[#0d0d0d] p-6 hover:border-[#00ff41] transition-colors duration-150">
+          <aside className="border border-[#84967e] bg-[#0d0d0d] p-4 hover:border-[#00ff41] transition-colors duration-150">
             <div className="mb-4 text-[0.75rem] uppercase tracking-[0.18em] text-[#b9ccb2]">contact details</div>
             <div className="space-y-4 text-[0.9rem] text-[#b9ccb2]">
               <div>
