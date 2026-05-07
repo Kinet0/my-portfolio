@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROOT@PORTFOLIO:~#</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#313c2e",
+                        "surface": "#0c160a",
+                        "on-primary-container": "#007117",
+                        "primary-container": "#00ff41",
+                        "on-primary-fixed": "#002203",
+                        "secondary-container": "#00e3fd",
+                        "on-surface-variant": "#b9ccb2",
+                        "on-secondary": "#00363d",
+                        "outline": "#84967e",
+                        "on-tertiary-fixed": "#2c1701",
+                        "tertiary": "#fff8f4",
+                        "secondary-fixed": "#9cf0ff",
+                        "secondary-fixed-dim": "#00daf3",
+                        "background": "#0c160a",
+                        "tertiary-fixed": "#ffdcbd",
+                        "surface-container-low": "#141e12",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#00530e",
+                        "on-secondary-container": "#00616d",
+                        "on-tertiary-fixed-variant": "#5d4124",
+                        "primary-fixed-dim": "#00e639",
+                        "primary": "#ebffe2",
+                        "on-secondary-fixed": "#001f24",
+                        "surface-container-lowest": "#071106",
+                        "on-primary": "#003907",
+                        "surface-container-highest": "#2d382a",
+                        "on-tertiary": "#442b10",
+                        "on-tertiary-container": "#7a5b3c",
+                        "surface-container": "#182216",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "surface-tint": "#00e639",
+                        "surface-container-high": "#222d20",
+                        "error": "#ffb4ab",
+                        "inverse-surface": "#dae6d2",
+                        "secondary": "#bdf4ff",
+                        "inverse-on-surface": "#283326",
+                        "inverse-primary": "#006e16",
+                        "surface-variant": "#2d382a",
+                        "on-surface": "#dae6d2",
+                        "on-error": "#690005",
+                        "surface-dim": "#0c160a",
+                        "error-container": "#93000a",
+                        "on-background": "#dae6d2",
+                        "outline-variant": "#3b4b37",
+                        "primary-fixed": "#72ff70",
+                        "tertiary-container": "#ffd5ae",
+                        "tertiary-fixed-dim": "#e7bf99"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "container-max": "1280px",
+                        "md": "24px",
+                        "sm": "16px",
+                        "xs": "8px",
+                        "base": "4px",
+                        "xl": "80px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Space Grotesk"],
+                        "h1": ["Space Grotesk"],
+                        "body-mono": ["Space Grotesk"],
+                        "code-sm": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "h2": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h1": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-mono": ["14px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "code-sm": ["12px", { "lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "label-caps": ["11px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            /* Global CRT Scanline effect */
+            background-image: linear-gradient(
+                rgba(0, 255, 65, 0.03) 50%, 
+                transparent 50%
+            );
+            background-size: 100% 4px;
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-mono selection:bg-primary-container selection:text-background">
+<!-- TopNavBar -->
+<nav class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant w-full sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-md h-[64px] max-w-container-max mx-auto">
+<div class="font-h2 text-h2 font-bold text-primary-container dark:text-primary-container">ROOT@PORTFOLIO:~#</div>
+<div class="hidden md:flex space-x-md font-body-mono text-body-mono uppercase tracking-widest h-full items-center">
+<a class="text-primary-container dark:text-primary-container border-b-2 border-primary-container pb-1 transition-colors duration-75 ease-in-out h-full flex items-center mt-[2px]" href="#">HOME</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-container-highest hover:text-primary-container pb-1 transition-colors duration-75 ease-in-out h-full flex items-center mt-[2px]" href="#">SKILLS</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-container-highest hover:text-primary-container pb-1 transition-colors duration-75 ease-in-out h-full flex items-center mt-[2px]" href="#">PROJECTS</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-container-highest hover:text-primary-container pb-1 transition-colors duration-75 ease-in-out h-full flex items-center mt-[2px]" href="#">CERTS</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-highest dark:hover:bg-surface-container-highest hover:text-primary-container pb-1 transition-colors duration-75 ease-in-out h-full flex items-center mt-[2px]" href="#">CONTACT</a>
+</div>
+<div class="flex space-x-sm">
+<span class="material-symbols-outlined text-primary-container dark:text-primary-container">terminal</span>
+<span class="material-symbols-outlined text-primary-container dark:text-primary-container">terminal</span>
+<span class="material-symbols-outlined text-primary-container dark:text-primary-container">settings</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-md py-lg grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10">
+<!-- Hero Terminal Section -->
+<div class="md:col-span-8 border border-outline-variant bg-surface flex flex-col hover:border-primary-container transition-colors duration-300">
+<!-- Terminal Title Bar -->
+<div class="border-b border-outline-variant bg-surface-container-low px-sm py-xs flex justify-between items-center">
+<div class="font-code-sm text-code-sm text-on-surface-variant uppercase">[ bash - 80x24 ]</div>
+<div class="flex space-x-base">
+<div class="w-3 h-3 border border-outline-variant"></div>
+<div class="w-3 h-3 border border-outline-variant"></div>
+<div class="w-3 h-3 border border-primary-container bg-primary-container"></div>
+</div>
+</div>
+<!-- Terminal Body -->
+<div class="p-lg flex flex-col md:flex-row gap-lg items-center flex-grow">
+<div class="flex-1 font-body-mono text-body-mono">
+<div class="mb-sm flex items-center flex-wrap">
+<span class="text-primary-container mr-xs">root@portfolio:~#</span>
+<span class="text-secondary-container">whoami</span>
+</div>
+<h1 class="font-h1 text-h1 text-on-background mb-md">
+                        I'm Alex Chen, crafting digital experiences through elegant code. <span class="text-primary-container animate-pulse inline-block w-4 h-6 bg-primary-container align-middle ml-1"></span>
+</h1>
+<div class="text-on-surface-variant font-code-sm text-code-sm space-y-1 mb-lg">
+<div>&gt; SYSTEM INITIATED...</div>
+<div>&gt; LOADING MODULES: [SECURITY_OPs, FULL_STACK_DEV, NET_INFRA]</div>
+<div>&gt; KERNEL PANIC AVERTED.</div>
+<div class="text-primary-container">&gt; STATUS: READY FOR INPUT_</div>
+</div>
+<button class="border border-primary-container text-primary-container bg-transparent hover:bg-primary-container hover:text-background px-md py-sm font-label-caps text-label-caps uppercase transition-colors duration-150 inline-flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">power</span>
+                        [ INITIALIZE_CONNECTION ]
+                    </button>
+</div>
+<!-- Headshot Glitch Container -->
+<div class="relative w-48 h-48 flex-shrink-0">
+<div class="absolute inset-0 rounded-full border border-primary-container bg-surface-container-high overflow-hidden z-10 group">
+<img alt="Alex Chen Portrait" class="w-full h-full object-cover mix-blend-luminosity opacity-70 group-hover:opacity-100 transition-opacity duration-300 grayscale" data-alt="A striking digital portrait of a cybersecurity expert embedded within a chaotic, terminal-driven environment. The subject's face is partially obscured by harsh shadows and illuminated by the vibrant, toxic #00FF41 neon green glow of cascading code. The aesthetic is pure high-contrast digital brutalism, utilizing a palette restricted to deep #0D0D0D blacks and glaring neon accents. The mood is intense, cerebral, and secure, resembling a raw, unadorned Unix interface translated into a portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApmmvhk7-2s3xAmjAxtGhNCnbJn-xtnm7GtIxAqkehhd2ANvcffS168gd-ELGAPwL-uTfr4-hkeME3qDxH2gy6i13V_KumOk6N-gfFuoUPfTMPTySdpEs8LMVzvttqzgKj7ngy-vqoFi5zFTZzDZ4xFOQD7L_aMRjLzU-4TZY-nDwfsJ6uHdJJbtaAHQK9SOwq1TrmeJT8DQoteYm9otHkAZIj7B_FPZCrjbsxq4Rnjid7H7CZ9DA0sLZT9congZkOopXV_nYeT_Zw"/>
+<!-- Overlay Scanlines specific to image -->
+<div class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,255,65,0.2)_50%)] bg-[length:100%_4px] mix-blend-overlay pointer-events-none"></div>
+</div>
+<!-- Decorative HUD elements -->
+<div class="absolute -left-6 top-1/2 -translate-y-1/2 text-primary-container font-h1 font-light opacity-50 z-0">[</div>
+<div class="absolute -right-6 top-1/2 -translate-y-1/2 text-primary-container font-h1 font-light opacity-50 z-0">]</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-surface border border-primary-container px-2 py-1 font-code-sm text-code-sm text-primary-container z-20 whitespace-nowrap">
+                        SYS.ADMIN
+                    </div>
+</div>
+</div>
+</div>
+<!-- Side Monitor Section (Bento Grid Style) -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Process List -->
+<div class="border border-outline-variant bg-surface flex flex-col flex-1 hover:border-primary-container transition-colors duration-300">
+<div class="border-b border-outline-variant bg-surface-container-low px-sm py-xs font-code-sm text-code-sm text-primary-container uppercase">
+                    top - 14:32:01 up 24 days
+                </div>
+<div class="p-md font-code-sm text-code-sm flex flex-col gap-sm flex-1">
+<div class="flex justify-between border-b border-outline-variant pb-xs text-on-surface-variant">
+<span>PID USER</span>
+<span>%CPU COMMAND</span>
+</div>
+<div class="flex justify-between text-primary-container">
+<span>1 root</span>
+<span>98.2 init_core</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span>42 admin</span>
+<span>12.4 node_env</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span>1337 user</span>
+<span> 0.1 sshd</span>
+</div>
+<div class="flex justify-between text-on-surface opacity-50">
+<span>9090 sys</span>
+<span> 0.0 grep</span>
+</div>
+<!-- Data Block Visualizer -->
+<div class="mt-auto pt-md border-t border-outline-variant">
+<div class="text-on-surface-variant mb-xs">[ NETWORK_TRAFFIC ]</div>
+<div class="flex items-end gap-1 h-8">
+<div class="w-full bg-primary-container h-[20%]"></div>
+<div class="w-full bg-primary-container h-[60%]"></div>
+<div class="w-full bg-primary-container h-[40%]"></div>
+<div class="w-full bg-primary-container h-[90%]"></div>
+<div class="w-full bg-primary-container h-[30%] animate-pulse"></div>
+<div class="w-full bg-primary-container h-[70%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Status Card -->
+<div class="border border-outline-variant bg-surface p-sm flex items-center justify-between hover:border-primary-container transition-colors duration-300">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary-container">encrypted</span>
+<span class="font-body-mono text-body-mono text-on-surface uppercase">Encryption</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary-container border border-primary-container px-xs py-base bg-surface-container-highest">
+                    AES-256 ACTIVE
+                </span>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant mt-auto z-50">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-md py-sm max-w-container-max mx-auto font-code-sm text-code-sm uppercase">
+<div class="text-on-surface-variant dark:text-on-surface-variant mb-sm md:mb-0">
+                [ SYSTEM STATUS: OPERATIONAL ] © 2024 SECURITY_CORE v1.0.4
+            </div>
+<div class="flex space-x-md text-on-surface-variant dark:text-on-surface-variant">
+<a class="hover:text-primary-container dark:hover:text-primary-container hover:underline transition-all" href="#">GITHUB</a>
+<a class="hover:text-primary-container dark:hover:text-primary-container hover:underline transition-all" href="#">LINKEDIN</a>
+<a class="hover:text-primary-container dark:hover:text-primary-container hover:underline transition-all" href="#">TRYHACKME</a>
+</div>
+</div>
+</footer>
+</body></html>
